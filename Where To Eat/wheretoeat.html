@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Recommendation System</title>
+  <style>
+    /* CSS for main content */
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* CSS for form */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"], select {
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #369afd;
+      color: #fff;
+      border: red;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #090453;
+    }
+
+    /* CSS for recommendation results */
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="bg-image"></div>
+
+
+<!-- Main Content -->
+<div class = "banner-text">
+<div class="content">
+  <h1>Welcome To <span>WhereToEat</span></h1>
+  <p>Answer a few questions below and we'll recommend a restaurant for you.</p>
+
+  <!-- Form -->
+  <form id="recommendationForm">
+    <label for="cuisine">Preferred Venue Type:</label>
+    <select id="cuisine" required>
+      <option value="">Select Venue Type</option>
+      <option value="Vegeterian Restaurant ">Vegeterian Restaurant </option>
+      <option value="Non-Vegeterian Restaurant ">Restaurant Non-Vegeterian</option>
+      <option value="Cafe">Cafe</option>
+      <option value="Bhojnalaya">Bhojnalaya</option>
+      <!-- Add more cuisine options as needed -->
+    </select>
+
+    <label for="budget">Ratings:</label>
+    <select id="cuisine" required>
+        <option value="">Select Ratings</option>
+        <option value="5 ★★★★★">5 Star</option>
+        <option value="4 ★★★★">4 Star</option>
+        <option value="3 ★★★">3 Star</option>
+        <option value="2 ★★ ">2 Star</option>
+        <option value="1★ ">1 Star </option>
+        
+        
+        
+        
+        <!-- Add more cuisine options as needed -->
+      </select>
+      
+    <input type="submit" class="bt" value="Suggest some Best Vicinity To Eat">
+  </form>
+</div>
+  <!-- Recommendation Results -->
+  <div id="result"></div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  // Function to handle form submission
+  function getRecommendation() {
+    // Get form data
+    var cuisine = document.getElementById('cuisine').value;
+    var budget = document.getElementById('budget').value;
+
+    // Perform recommendation logic here
+    // Replace the following line with your own recommendation algorithm
+    var recommendation = "Recommending Some Best " + cuisine + "  with a budget of " + budget + " Rating.";
+
+    // Display recommendation result
+    document.getElementById('result').innerText = recommendation;
+  }
+
+  // Add event listener to form submission
+  document.getElementById('recommendationForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    getRecommendation();
+  });
+</script>
+
+</body>
+</html>
