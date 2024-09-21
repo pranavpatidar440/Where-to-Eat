@@ -1,0 +1,204 @@
+/* Reset some default styles */
+body, figure, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+  
+a{
+    display: inline-block;
+    padding: 10px 50px;
+    /*border: 2px solid #fff;*/
+    font-size: 18px;
+    text-decoration: none;
+    color: #c40808;
+    margin-top: 15px;
+}
+
+body,html{
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+.bg-image {
+  /* The image used */
+  background-image: url("https://thumbs.dreamstime.com/b/assorted-indian-food-different-bowls-assorted-indian-food-white-wooden-background-top-view-dishes-appetizers-indian-114696132.jpg");
+  background-size : cover;
+  image-resolution: 50%;
+  background-position: cover;
+  z-index: -1;
+  width: 136.5%;
+  height: 100%; 
+  filter: blur(5px);
+}
+.banner-text{
+background-color: #e7bc8b;
+position: absolute;
+top: 30%;
+left: 40%;
+height: 500px;
+width: 250px;
+transform: translate(-56%,-25%);
+z-index: 80;
+width: 50%;
+padding: 20px 0;
+text-align: center;
+border-top-left-radius: 70px;
+border-bottom-right-radius: 80px;
+background-color: rgb(255, 255, 255);
+color: rgba(36, 1, 65, 0.747);
+font-weight: bold;
+border: 8px inset #dd8622;
+box-shadow: 15px 10px gray;
+
+}
+  
+.banner-text p{
+
+    padding: 0 10%;
+    font-family: merienda;
+}
+
+
+header {
+    
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  height: 70px;
+  width: 130%;
+  background-color: #000000;
+  background-position: left;
+  background-size: cover;
+  color: #523c3c;
+  text-align: left;
+  position: relative;
+  top: -110%;
+  right: 0%;
+}
+
+/* Set font and color */
+body {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    color: #5c4b4b;
+    top: 10%;
+    
+}
+
+  nav {
+    position: absolute;
+    top: -50px;
+    right: -90px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 50;
+    padding: -5;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 25 4px;
+  }
+  
+  nav a {
+    color: #ff0202;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: left;
+  }
+  nav a:hover{
+    color: #869eee;
+  }
+  
+
+  
+  
+h2{
+    transform: translate(0%,35%);
+}
+/* Header styles */
+.logo li a span{
+    position: absolute;
+    transform: translate(95%,-1550%);
+    color: rgb(192, 177, 177);
+}
+
+button{
+    padding: 9px 55px;
+    background-color: rgb(122, 213, 236);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+button:hover{
+    background-color: rgba(0, 136,169,0.8);
+}
+
+
+/* Section styles */
+section {
+    padding: 60px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+
+.submit-btn {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 12px 24px; /* Some padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline-block */
+    font-size: 16px; /* Increase font size */
+    border-radius: 20px; /* Rounded corners */
+  }
+.submit-btn:hover{
+    background-color: #314587;    
+}
+/* Style the button that is used to open and close the dropdown menu */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  nav{
+    display: flex;
+    align-items:  flex-start; 
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%; 
+    padding-right: 10%;
+    z-index: 0%;
+    position:relative;
+    }
+    .logo {
+        color: rgb(255, 255, 255); font-size: 28px;
+        font-style: italic ;
+        font-family: 'Castoro Titling', cursive;
+        }
+        
+        span{
+        color: #ea1538;
+        font-family: 'Dancing Script', cursive;
+        font-size: larger;
+        }

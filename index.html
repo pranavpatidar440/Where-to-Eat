@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WHERE TO EAT</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo"></div>
+    <div class="bg-image"></div>
+<header>
+    <nav>
+        <h2 class="logo" >Where<span>ToEat</span></h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="top.html">Top Restaurants</a></li>                
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="https://forms.gle/yGaUSLbepSpFYcQt5">Feedback</a></li>  
+        </ul>
+        </nav>   
+</header>
+    
+    
+    <div class = "banner-text">
+    <section id="home">
+        <div class="content">
+        <h1>Welcome to <span> WHERE TO EAT</span> </h1>
+        <img src="logo.jpg" alt="Logo" height="100">
+        <p>We recommended the best place for you to eat.</p></div>
+    </section>
+
+    
+        <!-- <div class="slogan">
+        
+        <img src="food.png" alt="slogan" width = "400" height="500" align="right">
+        </div> -->
+    
+    
+        <label for="cuisine">Preferred Venue Type:</label>
+        <div class="dropdown-content"> 
+        <select id="Restaurant">
+        
+          <option value="">Select Venue Type</option>
+          <option value="Vegeterian.html">Vegeterian Restaurant </option>
+          <option value="nonvegeterian.html">Non-Vegeterian Restaurant</option>
+          <option value="Cafe.html">Cafe</option>
+          <option value="Bhojanalay.html">Bhojnalaya</option>
+        </select><br><br><br>
+       
+        <script>
+            function navigate() {
+                var selectBox = document.getElementById("Restaurant");
+                var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+                if (selectedValue != "") {
+                    window.open(selectedValue, "_blank");
+                }
+            }   
+        </script>  
+    
+        <label for="Select Localities near You">Location:</label>
+        <select id="Location" required>
+            <option value="">Select Locality near you</option>
+            <option value="Vijay Nagar">Vijay Nagar</option>
+            <option value="Bengali Square">Bengali Square</option>
+            <option value="Nipania">Nipania</option>
+            <option value="Mahalaxmi Nagar">Mahalaxmi Nagar</option>
+            <option value="Rajendra Nagar">Rajendra Nagar</option>
+            <option value="Sudama Nagar">Sudama Nagar</option>
+            <option value="Super Corridor">Super Corridor</option>
+            <option value="New Palasia">New Palasia</option>
+            <option value="Anoop Nagar">Anoop Nagar</option>
+            <option value="LIG Colony">LIG Colony</option>
+            <option value="Saket Nagar">Saket Nagar</option>
+            <option value="Rau">Rau</option>
+            
+            
+            
+            
+            
+            <!-- Add more cuisine options as needed -->
+          </select><br><br><br>
+          
+          
+        <div id="testbutton"></div>
+        <button onclick="navigate()" class="submit-btn" >Submit</button>
+        
+
+      </form>
+    </div>
+</div>
